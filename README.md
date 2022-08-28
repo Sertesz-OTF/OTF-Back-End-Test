@@ -1,5 +1,5 @@
 # OTF Back-End Developer Test
-This project was made for a technical test for Back-End Developer at On The Fuze using Node JS, Hubspot and React
+This project was made for a technical test for the Back-End Developer position at On The Fuze using Node JS, Hubspot and React
 
 ## Getting Started
 1. Run `npm i` on the root folder to install Back-End dependencies.
