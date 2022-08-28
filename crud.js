@@ -3,6 +3,8 @@ const hubspotClient = require("./hubspotdb");
 const crud = {};
 const tableIdOrName = "developer_test_5";
 
+
+//Return all registers
 crud.ListRegisters = async (req, res) => {
   try {
     const apiResponse = await hubspotClient.cms.hubdb.rowsApi.getTableRows(
@@ -16,6 +18,7 @@ crud.ListRegisters = async (req, res) => {
   }
 };
 
+//Create register
 crud.Create = async (req, res) => {
   try {
     const { name, last_name, document_id } = req.body;
@@ -36,6 +39,7 @@ crud.Create = async (req, res) => {
   }
 };
 
+//Delete register with a given id
 crud.Delete = async (req, res) => {
   try {
     const { id } = req.params;
@@ -58,6 +62,7 @@ crud.Delete = async (req, res) => {
   }
 };
 
+//Return one register with a given id
 crud.GetRegister = async (req, res) => {
   try {
     const { id } = req.params;
@@ -73,6 +78,7 @@ crud.GetRegister = async (req, res) => {
   }
 };
 
+//Update register in DB
 crud.Update = async (req, res) => {
   try {
     const { id } = req.params;

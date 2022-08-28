@@ -32,7 +32,6 @@ const Landing = () => {
 
   const ReLoad = async (id) => {
     const deletedreg = await DeleteRegister(id);
-    console.log(deletedreg);
     if ((deletedreg.status === 200)) {
       fetchData();
     }

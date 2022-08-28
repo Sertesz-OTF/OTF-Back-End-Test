@@ -16,10 +16,8 @@ const Create = () => {
       last_name: e.target[1].value,
       document_id: e.target[2].value,
     };
-    console.log(body);
     const res = await axios.post(`http://localhost:8080/create`, body);
     if (res.status === 200) {
-      console.log(res);
       navigate("/");
     }
   };

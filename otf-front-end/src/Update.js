@@ -16,9 +16,7 @@ const Update = () => {
   };
 
   const fetchData = async () => {
-    console.log(id);
     const register = await GetRegister();
-    console.log(register);
     setRegister(register.data);
   };
 
@@ -34,10 +32,8 @@ const Update = () => {
       last_name: e.target[1].value,
       document_id: e.target[2].value,
     };
-    console.log(body);
     const res = await axios.patch(`http://localhost:8080/update/${id}`, body);
     if (res.status === 200) {
-      console.log(res);
       navigate("/");
     }
   };
