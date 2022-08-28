@@ -1,5 +1,6 @@
 # OTF Back-End Developer Test
-Prueba tecnica Back-End Developer On The Fuze
+Technical Test Back-End Developer On The Fuze
+This Project was made with Node JS, Hubspot and React
 
 ## Getting Started
 1. Run `npm i` on the root folder to install Back-End dependencies.
