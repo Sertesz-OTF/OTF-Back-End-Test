@@ -9,4 +9,4 @@ This project was made for a technical test for the Back-End Developer position a
 5. Now you can test the app through the React app
 
 ## Test Back-End
-Once started, you can test the server with a GET request with `http://localhost:8080/` and the response will be the array of registers in the Hubspot Database
+Once started, you can test the server with a GET request to `http://localhost:8080/` and the response will be the array of registers in the Hubspot Database
